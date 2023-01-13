@@ -1,0 +1,171 @@
+/*************/
+/* CSS RESET */
+/*************/
+
+/* naar een idee van Jen Simmons */
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+
+:root {
+  --color-headings:crimson
+}
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+body {
+  margin:0;
+  overflow-y: hidden;
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+main {
+  display: flex;
+}
+
+@keyframes boat {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(1000%);
+  }
+}
+
+main > img:nth-of-type(1) {
+  width:10em;
+  height: auto;
+  position: absolute;
+  top: 6.2em;
+  left: 3em;
+  animation-name: boat;
+  animation-duration: 100s;
+  z-index: 1000;
+}
+
+main img:nth-of-type(2) {
+  width:10em;
+  height: auto;
+  position: fixed;
+  top: 8.8em;
+  right: 3em;
+}
+
+/* section 1 */
+section img:nth-of-type(1) {
+  width: auto;
+  height: 50vw;
+}
+
+@keyframes tekst {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+
+section:nth-of-type(1) p {
+  color: white;
+  font-size: .8em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30em;
+  line-height: 1.4em;
+  animation-name: tekst;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+
+section:nth-of-type(1) p:nth-of-type(1){
+  top:18em;
+  left: 65em;
+}
+
+section:nth-of-type(1) p:nth-of-type(2){
+  top:31.5em;
+  left: 65em;
+}
+
+@keyframes walvis {
+  0% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
+}
+
+section:nth-of-type(2) img:nth-of-type(2) {
+  position: absolute;
+  width: 28em;
+  top: 30em;
+  left: 80em;
+  animation-name: walvis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(2) img:nth-of-type(3) {
+  position: absolute;
+  width: 28em;
+  top: 25em;
+  left: 145em;
+  transform: rotate(-45deg);
+  animation-name: walvis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  rotate: 15deg;
+}
+
+section:nth-of-type(2) img:nth-of-type(4) {
+  position: absolute;
+  width: 20em;
+  top: 20em;
+  left: 165em;
+  animation-name: walvis;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(2) p{
+  color: white;
+  font-size: .8em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 30em;
+  line-height: 1.4em;
+  animation-name: tekst;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  position: absolute;
+}
+
+section:nth-of-type(2) p:nth-of-type(1) {
+  top:25em;
+  left: 145em;
+}
+
+section:nth-of-type(2) p:nth-of-type(2){
+  top:31.5em;
+  left: 145em;
+}
+
+
+
