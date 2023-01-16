@@ -34,10 +34,15 @@ main {
 
 @keyframes boat {
   0% {
-    transform: translateX(0%);
+    transform: translateX(800%);
   }
+
+  50% {
+    transform: translateX(800%);
+  }
+
   100% {
-    transform: translateX(1000%);
+    transform: translateX(2000%);
   }
 }
 
@@ -52,7 +57,7 @@ main > img:nth-of-type(1) {
   z-index: 1000;
 }
 
-main img:nth-of-type(2) {
+main > img:nth-of-type(2) {
   width:10em;
   height: auto;
   position: fixed;
@@ -60,12 +65,42 @@ main img:nth-of-type(2) {
   right: 3em;
 }
 
-/* section 1 */
 section img:nth-of-type(1) {
   width: auto;
   height: 50vw;
 }
 
+p {
+  font-family: Arial;
+}
+
+/* section 1 */
+
+section:nth-of-type(1) h2{
+  position: absolute;
+  top:15em;
+  left: 8em;
+  z-index: 1000;
+  color: black;
+  font-size: 1.3em;
+  margin: 0;
+  font-family: Arial;
+  width: 33em;
+  line-height: 1.5em;
+}
+
+section:nth-of-type(1) p:nth-of-type(1) {
+  color: black;
+  font-size: 1em;
+  width: 50em;
+  line-height: 1.8em;
+  position: absolute;
+  left: 10.6em;
+  top: 25em;
+}
+
+
+/* section 2 */
 @keyframes tekst {
   0% {
     transform: translateY(0%);
@@ -77,28 +112,18 @@ section img:nth-of-type(1) {
     transform: translateY(0%);
   }
 }
-
-
-section:nth-of-type(1) p {
+section:nth-of-type(2) p {
   color: white;
-  font-size: .8em;
+  font-size: 1em;
   font-family: Arial, Helvetica, sans-serif;
   width: 30em;
-  line-height: 1.4em;
+  line-height: 2em;
   animation-name: tekst;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   position: absolute;
-}
-
-section:nth-of-type(1) p:nth-of-type(1){
-  top:18em;
-  left: 65em;
-}
-
-section:nth-of-type(1) p:nth-of-type(2){
-  top:31.5em;
-  left: 65em;
+  top:15em;
+  left: 115em;
 }
 
 @keyframes walvis {
@@ -113,21 +138,21 @@ section:nth-of-type(1) p:nth-of-type(2){
   }
 }
 
-section:nth-of-type(2) img:nth-of-type(2) {
+section:nth-of-type(3) img:nth-of-type(2) {
   position: absolute;
   width: 28em;
   top: 30em;
-  left: 80em;
+  left: 160em;
   animation-name: walvis;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
-section:nth-of-type(2) img:nth-of-type(3) {
+section:nth-of-type(3) img:nth-of-type(3) {
   position: absolute;
   width: 28em;
   top: 25em;
-  left: 145em;
+  left: 225em;
   transform: rotate(-45deg);
   animation-name: walvis;
   animation-duration: 10s;
@@ -135,19 +160,18 @@ section:nth-of-type(2) img:nth-of-type(3) {
   rotate: 15deg;
 }
 
-section:nth-of-type(2) img:nth-of-type(4) {
+section:nth-of-type(3) img:nth-of-type(4) {
   position: absolute;
   width: 20em;
-  top: 20em;
-  left: 165em;
+  top: 18em;
+  left: 240em;
   animation-name: walvis;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
-section:nth-of-type(2) p{
-  color: white;
-  font-size: .8em;
+section:nth-of-type(3) p {
+  font-size: .9em;
   font-family: Arial, Helvetica, sans-serif;
   width: 30em;
   line-height: 1.4em;
@@ -157,14 +181,23 @@ section:nth-of-type(2) p{
   position: absolute;
 }
 
-section:nth-of-type(2) p:nth-of-type(1) {
-  top:25em;
-  left: 145em;
+section:nth-of-type(3) p:nth-of-type(1) {
+  top:16em;
+  left: 180em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  color: black;
 }
 
-section:nth-of-type(2) p:nth-of-type(2){
-  top:31.5em;
-  left: 145em;
+section:nth-of-type(3) p:nth-of-type(2){
+  top:27em;
+  left: 218em;
+  color: black;
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+  color: black;
 }
 
 
