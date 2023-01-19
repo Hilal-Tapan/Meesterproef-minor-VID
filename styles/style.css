@@ -34,15 +34,27 @@ main {
 
 @keyframes boat {
   0% {
-    transform: translateX(800%);
+    transform: translateX(1000%);
   }
 
-  50% {
-    transform: translateX(800%);
+  20% {
+    transform: translateX(1000%);
+  }
+
+  40% {
+    transform: translateX(2000%);
+  }
+
+  60% {
+    transform: translateX(3000%);
+  }
+
+  80% {
+    transform: translateX(4000%);
   }
 
   100% {
-    transform: translateX(2000%);
+    transform: translateX(5000%);
   }
 }
 
@@ -50,18 +62,20 @@ main > img:nth-of-type(1) {
   width:10em;
   height: auto;
   position: absolute;
-  top: 6.2em;
-  left: 3em;
+  top: 9.6em;
+  /* left: 5em; */
   animation-name: boat;
   animation-duration: 100s;
   z-index: 1000;
+  animation-fill-mode:forwards;
+
 }
 
 main > img:nth-of-type(2) {
   width:10em;
   height: auto;
   position: fixed;
-  top: 8.8em;
+  top: 12.1em;
   right: 3em;
 }
 
@@ -75,10 +89,9 @@ p {
 }
 
 /* section 1 */
-
 section:nth-of-type(1) h2{
   position: absolute;
-  top:15em;
+  top:19em;
   left: 8em;
   z-index: 1000;
   color: black;
@@ -91,12 +104,15 @@ section:nth-of-type(1) h2{
 
 section:nth-of-type(1) p:nth-of-type(1) {
   color: black;
-  font-size: 1em;
+  font-size: 1.2em;
   width: 50em;
   line-height: 1.8em;
   position: absolute;
-  left: 10.6em;
+  left: 8.4em;
   top: 25em;
+  background-color: #C2B280;
+  padding:1em;
+  border-radius: 1em;
 }
 
 
@@ -114,7 +130,7 @@ section:nth-of-type(1) p:nth-of-type(1) {
 }
 section:nth-of-type(2) p {
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
   width: 30em;
   line-height: 2em;
@@ -122,8 +138,8 @@ section:nth-of-type(2) p {
   animation-duration: 5s;
   animation-iteration-count: infinite;
   position: absolute;
-  top:15em;
-  left: 115em;
+  top:16em;
+  left: 120em;
 }
 
 @keyframes walvis {
@@ -138,11 +154,12 @@ section:nth-of-type(2) p {
   }
 }
 
+/* section 3 */
 section:nth-of-type(3) img:nth-of-type(2) {
   position: absolute;
-  width: 28em;
-  top: 30em;
-  left: 160em;
+  width: 35em;
+  top: 41em;
+  left: 195em;
   animation-name: walvis;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -150,9 +167,9 @@ section:nth-of-type(3) img:nth-of-type(2) {
 
 section:nth-of-type(3) img:nth-of-type(3) {
   position: absolute;
-  width: 28em;
-  top: 25em;
-  left: 225em;
+  width: 35em;
+  top: 35em;
+  left: 280em;
   transform: rotate(-45deg);
   animation-name: walvis;
   animation-duration: 10s;
@@ -162,19 +179,19 @@ section:nth-of-type(3) img:nth-of-type(3) {
 
 section:nth-of-type(3) img:nth-of-type(4) {
   position: absolute;
-  width: 20em;
-  top: 18em;
-  left: 240em;
+  width: 22em;
+  top: 25em;
+  left: 290em;
   animation-name: walvis;
   animation-duration: 10s;
   animation-iteration-count: infinite;
 }
 
 section:nth-of-type(3) p {
-  font-size: .9em;
+  font-size: 1.2em;
   font-family: Arial, Helvetica, sans-serif;
   width: 30em;
-  line-height: 1.4em;
+  line-height: 1.6em;
   animation-name: tekst;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -182,8 +199,8 @@ section:nth-of-type(3) p {
 }
 
 section:nth-of-type(3) p:nth-of-type(1) {
-  top:16em;
-  left: 180em;
+  top:17em;
+  left: 165em;
   background-color: white;
   padding: 1em;
   border-radius: 1em;
@@ -191,14 +208,290 @@ section:nth-of-type(3) p:nth-of-type(1) {
 }
 
 section:nth-of-type(3) p:nth-of-type(2){
-  top:27em;
-  left: 218em;
+  top:25em;
+  left: 202em;
   color: black;
   background-color: white;
   padding: 1em;
   border-radius: 1em;
   color: black;
 }
+
+/* section 5 */
+section:nth-of-type(5) img:first-child {
+  z-index: -1000;
+}
+
+section:nth-of-type(5) img:nth-of-type(2) {
+  position: absolute;
+  width: 8em;
+  top: 35em;
+  left: 360em;
+  transform: rotate(-90deg);
+}
+
+section:nth-of-type(5) img:nth-of-type(3) {
+  position: absolute;
+  width: 8em;
+  top: 25em;
+  left: 365em;
+  transform: rotate(-90deg);
+}
+
+section:nth-of-type(5) img:nth-of-type(4) {
+  position: absolute;
+  width: 8em;
+  top: 30em;
+  left: 348em;
+  transform: rotate(-70deg);
+}
+
+section:nth-of-type(5) img:nth-of-type(5) {
+  position: absolute;
+  width: 8em;
+  top: 20em;
+  left: 330em;
+  transform: rotate(-80deg);
+}
+
+section:nth-of-type(5) img:nth-of-type(6) {
+  position: absolute;
+  width: 8em;
+  top: 26em;
+  left: 332em;
+  transform: rotate(-90deg);
+}
+
+section:nth-of-type(5) img:nth-of-type(7) {
+  position: absolute;
+  width: 8em;
+  top: 20em;
+  left: 355em;
+  transform: rotate(-99deg);
+}
+
+section:nth-of-type(5) img:nth-of-type(8) {
+  position: absolute;
+  width: 8em;
+  top: 24em;
+  left: 355em;
+  transform: rotate(-99deg);
+}
+
+/* windmolens */
+section:nth-of-type(5) img:nth-of-type(9) {
+  position: absolute;
+  height: 12em;
+  top: 5em;
+  left: 335em;
+  z-index: 10;
+}
+section:nth-of-type(5) img:nth-of-type(10) {
+  position: absolute;
+  height: 12em;
+  top: 5em;
+  left: 350em;
+  z-index: 10;
+}
+section:nth-of-type(5) img:nth-of-type(11) {
+  position: absolute;
+  height: 12em;
+  top: 5em;
+  left: 365em;
+  z-index: 10;
+}
+
+@keyframes windmolens {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+section:nth-of-type(5) img:nth-of-type(12) {
+  transform-origin: 60% 60%;
+  position: absolute;
+  height: 12em;
+  top: -1.5em;
+  left: 328.5em;
+  animation-name: windmolens;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  
+}
+section:nth-of-type(5) img:nth-of-type(13) {
+  transform-origin: 60% 60%;
+  position: absolute;
+  height: 12em;
+  top: -1.5em;
+  left: 343.5em;
+  animation-name: windmolens;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+section:nth-of-type(5) img:nth-of-type(14) {
+  transform-origin: 60% 60%;
+  position: absolute;
+  height: 12em;
+  top: -1.5em;
+  left: 358.5em;
+  animation-name: windmolens;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(5) h2 {
+  position: absolute;
+  top:14.5em;
+  left: 290em;
+  z-index: 1000;
+  color: white;
+  font-size: 1.3em;
+  margin: 0;
+  font-family: Arial;
+  width: 33em;
+  line-height: 1.5em;
+}
+
+section:nth-of-type(5) p {
+  color: white;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 45em;
+  line-height: 1.5em;
+  position: absolute;
+  left: 377em;
+}
+
+section:nth-of-type(5) p:nth-of-type(1){
+  top:20em;
+}
+
+section:nth-of-type(5) h3 {
+  position: absolute;
+  top:28.5em;
+  left: 290em;
+  z-index: 1000;
+  color: white;
+  font-size: 1.3em;
+  margin: 0;
+  font-family: Arial;
+  width: 33em;
+  line-height: 1.5em;
+}
+
+section:nth-of-type(5) p:nth-of-type(2){
+  top:38em;
+}
+
+
+/* section 6 */
+section:nth-of-type(6) img:nth-of-type(2) {
+  position: absolute;
+  width: 30em;
+  top: 43em;
+  left: 470em;
+}
+
+section:nth-of-type(6) img:nth-of-type(3) {
+  position: absolute;
+  width: 30em;
+  top: 43em;
+  left: 490em;
+}
+
+/* mossel animaties */
+@keyframes mossel {
+  0% {
+    transform: translateY(0);
+  }
+  
+  10% {
+    transform: translateY(-300%);
+  }
+  
+  100% {
+    transform: translateY(0); 
+  }
+}
+
+@keyframes mossel2 {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  
+  20% {
+    transform: translateY(-300%);
+  }
+  
+  100% {
+    transform: translateY(-300); 
+  }
+}
+
+section:nth-of-type(6) img:nth-of-type(4) {
+  position: absolute;
+  width: 5em;
+  top: 44em;
+  left: 490em;
+  animation-name: mossel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(6) img:nth-of-type(5) {
+  position: absolute;
+  width: 6em;
+  top: 44em;
+  left: 480em;
+  animation-name: mossel2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(6) img:nth-of-type(6) {
+  position: absolute;
+  width: 6em;
+  top: 44em;
+  left: 510em;
+  animation-name: mossel;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(6) img:nth-of-type(7) {
+  position: absolute;
+  width: 5em;
+  top: 44em;
+  left: 495em;
+  animation-name: mossel2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+section:nth-of-type(6) p {
+  color: black;
+  font-size: 1.1em;
+  font-family: Arial;
+  width: 40em;
+  line-height: 1.5em;
+  position: absolute;
+  left: 390em;
+  top: 16em;
+  background-color: white;
+  padding: 1em;
+  border-radius: 1em;
+}
+
+
+
+
+
 
 
 
