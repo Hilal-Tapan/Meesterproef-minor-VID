@@ -489,7 +489,30 @@ section:nth-of-type(6) p {
 }
 
 
+section:nth-of-type(7) a {
+  margin: 0;
+  padding: 0;
+}
 
+section:nth-of-type(7) a  h2 {
+  position: absolute;
+  top:9em;
+  left: 185em;
+  padding: 1em;
+  width: 15em;
+  border-radius: 1em;
+  color: white;
+  background-color: rgb(80, 141, 160);
+  font-size: 3em;
+  margin: 0;
+  font-family: Arial;
+  line-height: 1.5em;
+  text-transform: uppercase;
+}
+
+section:nth-of-type(7) a h2:hover{
+  background-color: rgb(47, 76, 85);
+}
 
 
 
